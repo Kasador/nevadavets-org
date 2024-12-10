@@ -44,6 +44,7 @@ This repository contains the source code for the redevelopment of [NevadaVets.or
 - npm i style-loader
 - npm i css-loader
 - npm i sass-loader
+- npm i copy-webpack-plugin
 
 1.  **Clone the Repository**
 

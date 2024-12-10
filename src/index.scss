@@ -1,3 +1,16 @@
+/* Color Scheme >>>     
+    primary: '#C54A45',
+    secondary: '#CCCCCC',
+    accent: '#4F90FC',
+    background: '#EDEDED',
+    surface: '#F3F4F6',
+    text: '#2B2B2B',
+*/
+// Color Scheme >>>
+$color-bg: #EDEDED;
+$color-primary: #C54A45;
+$color-secondary: #F3F4F6;
+
 body {
-    background-color: green;
+    background-color: $color-secondary;
 }
