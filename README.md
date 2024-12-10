@@ -31,12 +31,19 @@ This repository contains the source code for the redevelopment of [NevadaVets.or
 
   
 
-### 🔨 **Prerequisites**
+### 🪛 **Installation**
 
 - Node.js and npm installed.
-- Webpackconfig.js
-
-### 🪛 **Installation**
+- npm i webpack
+- npm i sass
+- npm i babel-loader
+- npm i webpack-dev-server
+- npm i webpack-cli
+- npm i html-webpack-plugin
+- npm i @babel/preset-env
+- npm i style-loader
+- npm i css-loader
+- npm i sass-loader
 
 1.  **Clone the Repository**
 
