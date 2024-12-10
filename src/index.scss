@@ -1,16 +1,12 @@
-/* Color Scheme >>>     
-    primary: '#C54A45',
-    secondary: '#CCCCCC',
-    accent: '#4F90FC',
-    background: '#EDEDED',
-    surface: '#F3F4F6',
-    text: '#2B2B2B',
-*/
-// Color Scheme >>>
-$color-bg: #EDEDED;
-$color-primary: #C54A45;
-$color-secondary: #F3F4F6;
+@use './assets/styles/reset.scss'; // CSS reset for styles across ALL browsers; safai, chrome, firefox, etc...
+
+// Color Scheme >>> variables 
+$color-bg: #F3F4F6;             // dirty white
+$color-primary: #C54A45;        // red
+$color-secondary: #4F90FC;      // light blue
+$color-text: #2B2B2B;           // matte black
+$color-surface: #CCCCCC;        // light gray
 
 body {
-    background-color: $color-secondary;
+    background-color: $color-bg;
 }

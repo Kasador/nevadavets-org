@@ -15,21 +15,53 @@ This repository contains the source code for the redevelopment of [NevadaVets.or
 
 ### 📘 **Frontend**
 
--  **HTML**: 
+-  **HTML - HTML5**
 
--  **SASS/SCSS**: 
+-  **SASS/SCSS - CSS3**
 
+-  **JavaScript - ES6**
 
 ### 📖 **Backend**
 
--  **NodeJS**: 
+-  **NodeJS - npm**
 
 ## ❓ **Why This Tech Stack?**
  
+Simple, yet **powerful setup** that is just not overcomplicating things where things don't need to be. Using the basics _Plus+_ is enough for the project needs and development. This tech stack is the definition of _not_ reinventing the wheel. Spend **more** time coding and **less** time debugging. 
 
 # 📁 Overview to Project Setup
 
-  
+```json
+{
+  "name": "nevadavets-org",
+  "version": "1.0.0",
+  "description": "Building & developing nevadavets.org, a non-profit charitable foundation in order to help & improve quality of life for members of the military, retirees, veterans & their families undergoing medical treatment at military & veterans healthcare facilities.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
+
+```
 
 ### 🪛 **Installation**
 
@@ -55,5 +87,18 @@ cd nevadavets-org
 
 ## 🐛 **Issues/Bugs**
 
+This is needed in order to process the images/assets when compiled using webpack. Output folder is **dist**.
+```javascript
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/assets', to: 'assets' }, // Copy the 'assets' folder to 'dist/assets'
+      ],
+    }),
+```
+
 ## 🚧 **Updates/Progress**
 
+Got assets working and configured _webpack.config.js_ file to include assets folder.
+![image](https://github.com/user-attachments/assets/1e8e5a57-1e33-43b7-a4b4-194ef49028ff)
