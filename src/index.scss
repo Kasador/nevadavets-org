@@ -23,16 +23,17 @@ body {
     background-color: $color-bg;
 }
 
-header {
-    z-index: 1;
+header { // header content
+    z-index: 499;
     max-height: 64px;
 
+    // Desktop Navbar >>>
     nav {
         display: flex;
         justify-content: start;
-        background-color: $color-primary; // Red background for the nav
+        background-color: $color-primary;
         padding: 1.3rem;
-        z-index: 1;
+        z-index: 500;
         max-height: 64px;
 
         .logo {
@@ -41,49 +42,50 @@ header {
             top: 0;
             left: 0;
             cursor: pointer;
-            z-index: 10;
+            z-index: 999;
         }
         
         ul {
-            list-style: none; // Remove bullet points
+            list-style: none; 
             margin: 0;
             padding: 0;
-            display: flex; // Arrange items horizontally
-            gap: 2rem; // Space between items
-            z-index: 999;
+            display: flex;
+            gap: 2rem;
+            z-index: 501;
 
             #home {
                 margin-left: 200px;
             }
         }
     
-        li {
-            position: relative; // For dropdown menus
+        li { // for dropdown menus
+            position: relative;
             font-size: $font-size-extra-large;
         }
     
         a {
-            color: $color-bg; // White text
-            text-decoration: none; // Remove underline
+            color: $color-bg; 
+            text-decoration: none; 
             font-weight: bold;
-            display: flex; // Align text and icon
+            display: flex; 
             align-items: center;
-            gap: 0.5rem; // Space between text and icon
+            gap: 0.5rem;
 
             transition: all 0.3s;
         
-            &:hover {
-                color: $color-secondary; // Change to blue on hover
-                background-color: $color-bg;
-                border-radius: 5px;
-                padding-left: 20px;
-                padding-right: 5px;
+            &:hover { // menu items on hover
+                // color: $color-secondary;
+                border-radius: 10px;
+                background-color: $color-secondary;
+                padding-left: 25px;
+                padding-right: 10px;
+                font-size: $font-size-large;
             }
         }
     
-        // Dropdown Menu
-        ul ul {
-            display: none; // Hide dropdown initially
+        // Dropdown Menu >>> 
+        ul ul { // hide dropdown initially
+            display: none; 
             position: absolute;
             background-color: $color-surface;
             padding: 0.5rem;
@@ -91,8 +93,8 @@ header {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     
-        li:hover > ul {
-            display: block; // Show dropdown on hover
+        li:hover > ul {  // show dropdown on hover
+            display: block;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             border-bottom-left-radius: 20px;
@@ -104,21 +106,22 @@ header {
     
         ul ul a {
             color: $color-text;
-            font-size: $font-size-large;
+            font-size: $font-size-medium;
             margin-bottom: 15px;
+            width: 240px;
 
             transition: all 0.3s;
 
-            &:hover {
-                color: $color-primary; // Red hover for dropdown
+            &:hover { // hover for dropdown
+                color: $color-primary;
                 background-color: $color-text;
                 padding: 5px;
                 border-radius: 10px;
-                font-size: $font-size-medium;
+                font-size: $font-size-large;
             }
         }
 
-        .btn-donate {
+        .btn-donate { // donate btn
             position: absolute;
             width: 100px;
             top: 0;
@@ -132,16 +135,18 @@ header {
             
             transition: all 0.3s;
 
-            &:hover {
+            &:hover { // hover for donate btn, header
                 border-top-left-radius: 50px;
                 background-color: $color-bg;
                 color: $color-text;
+                font-size: $font-size-large;
+                // text-transform: 
             }
         }
     }
 }
 
-main {
+main { // main content
     z-index: 0;
     width: 100%;
 
@@ -152,14 +157,14 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 23;
+        z-index: 0;
     }
 
-    .section-hero {
+    .section-hero { // the hero image section
         display: flex;
         justify-content: center;
 
-        div {
+        div { // the hero image
             background-image: url("./assets/images/navadavetsorg-hero-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -172,11 +177,10 @@ main {
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            z-index: 999;
         }
     }
 
-    .hero-content-wrapper {
+    .hero-content-wrapper { // content for hero image
         background-image: none !important;
         position: relative;
         bottom: 100px;
@@ -197,7 +201,7 @@ main {
             font-size: $font-size-extra-large;
         }
 
-        button {
+        button { // call-to-action btn hero image content
             margin: 20px;
             padding: 10px 15px;
             border-radius: 5px;
