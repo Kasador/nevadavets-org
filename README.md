@@ -106,5 +106,11 @@ Got assets working and configured _webpack.config.js_ file to include assets fol
 ### **Navbar for Desktop Completed**
 ![Navbar_Completed](https://github.com/user-attachments/assets/8eb56926-a768-4140-b4fd-382f74845554)
 
-## **Hero Image for Desktop Completed**
+### Updated Minor UI/UX Issues to Navbar
+![Screenshot 2024-12-11 153535](https://github.com/user-attachments/assets/071fa8fc-3f8f-4251-8b4d-9b257f769b9c)
+![Screenshot 2024-12-11 153608](https://github.com/user-attachments/assets/8e04f21f-c2fc-4ae6-944b-8b6235df068a)
+![Screenshot 2024-12-11 153615](https://github.com/user-attachments/assets/b97f5582-f983-49cb-ab56-542ad3b57c25)
+
+### **Hero Image for Desktop Completed**
 ![Screenshot 2024-12-11 130822](https://github.com/user-attachments/assets/d6298d00-95e8-47a0-8343-550bf71d55f3)
+
