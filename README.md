@@ -60,7 +60,6 @@ Simple, yet **powerful setup** that is just not overcomplicating things where t
     "webpack-dev-server": "^5.1.0"
   }
 }
-
 ```
 
 ### 🪛 **Installation**
@@ -77,6 +76,7 @@ Simple, yet **powerful setup** that is just not overcomplicating things where t
 - npm i css-loader
 - npm i sass-loader
 - npm i copy-webpack-plugin
+- npm i boxicons
 
 1.  **Clone the Repository**
 
