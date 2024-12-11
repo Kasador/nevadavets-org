@@ -1,4 +1,5 @@
 @use './assets/styles/reset.scss'; // CSS reset for styles across ALL browsers; safai, chrome, firefox, etc...
+@import '~boxicons/css/boxicons.min.css'; // Import the Boxicons CSS file
 
 // Color Scheme >>> variables 
 $color-bg: #F3F4F6;             // dirty white
@@ -7,6 +8,138 @@ $color-secondary: #4F90FC;      // light blue
 $color-text: #2B2B2B;           // matte black
 $color-surface: #CCCCCC;        // light gray
 
+// Font Sizes >>> variables 
+$font-size-small: 0.8rem;
+$font-size-medium: 1.0rem;
+$font-size-large: 1.2rem;
+$font-size-extra-large: 1.4rem;
+
+html {
+    width: 100%;
+}
+
 body {
     background-color: $color-bg;
+}
+
+header {
+    z-index: 1;
+    max-height: 64px;
+
+    nav {
+        display: flex;
+        justify-content: start;
+        background-color: $color-primary; // Red background for the nav
+        width: 100%;
+        padding: 1.3rem;
+        z-index: 1;
+        max-height: 64px;
+
+        .logo {
+            position: absolute;
+            width: 191px;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        ul {
+            list-style: none; // Remove bullet points
+            margin: 0;
+            padding: 0;
+            display: flex; // Arrange items horizontally
+            gap: 2rem; // Space between items
+
+            #home {
+                margin-left: 200px;
+            }
+        }
+    
+        li {
+            position: relative; // For dropdown menus
+            font-size: $font-size-extra-large;
+        }
+    
+        a {
+            color: $color-bg; // White text
+            text-decoration: none; // Remove underline
+            font-weight: bold;
+            display: flex; // Align text and icon
+            align-items: center;
+            gap: 0.5rem; // Space between text and icon
+
+            transition: all 0.3s;
+        
+            &:hover {
+                color: $color-secondary; // Change to blue on hover
+                background-color: $color-bg;
+                border-radius: 5px;
+                padding-left: 20px;
+                padding-right: 5px;
+            }
+        }
+    
+        // Dropdown Menu
+        ul ul {
+            display: none; // Hide dropdown initially
+            position: absolute;
+            background-color: $color-surface;
+            padding: 0.5rem;
+            list-style: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        li:hover > ul {
+            display: block; // Show dropdown on hover
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    
+        ul ul li {
+            margin: 0;
+        }
+    
+        ul ul a {
+            color: $color-text;
+            font-size: $font-size-large;
+            margin-bottom: 15px;
+
+            transition: all 0.3s;
+
+            &:hover {
+                color: $color-primary; // Red hover for dropdown
+                background-color: $color-text;
+                padding: 5px;
+                border-radius: 10px;
+                font-size: $font-size-medium;
+            }
+        }
+
+        .btn-donate {
+            position: absolute;
+            width: 100px;
+            top: 0;
+            right: 0;
+            font-size: $font-size-extra-large;
+            height: 64px;
+            cursor: pointer;
+            background-color: $color-secondary;
+            color: $color-bg;
+            border: none;
+            
+            transition: all 0.3s;
+
+            &:hover {
+                border-top-left-radius: 40px;
+                background-color: $color-bg;
+                color: $color-text;
+            }
+        }
+    }
+}
+
+main {
+    z-index: 0;
 }
