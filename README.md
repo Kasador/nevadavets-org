@@ -103,5 +103,8 @@ new CopyWebpackPlugin({
 Got assets working and configured _webpack.config.js_ file to include assets folder.
 ![image](https://github.com/user-attachments/assets/1e8e5a57-1e33-43b7-a4b4-194ef49028ff)
 
-### **Navbar for Desktop Completed
+### **Navbar for Desktop Completed**
 ![Navbar_Completed](https://github.com/user-attachments/assets/8eb56926-a768-4140-b4fd-382f74845554)
+
+## **Hero Image for Desktop Completed**
+![Screenshot 2024-12-11 130822](https://github.com/user-attachments/assets/d6298d00-95e8-47a0-8343-550bf71d55f3)
