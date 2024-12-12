@@ -42,11 +42,11 @@ header { // header content
         background-color: $color-primary;
         padding: 1.3rem;
         z-index: 500;
-        min-height: 64px;
+        min-height: 63.5px;
 
         .logo {
             position: absolute;
-            width: 191.1px;
+            width: 191px;
             top: 0;
             left: 0;
             cursor: pointer;
@@ -314,6 +314,12 @@ main { // main content
     }
     main .hero-content-wrapper img {
         width: 100px;
+    }
+    main .section-hero div {
+        height: 85vh;
+    }
+    main section {
+        padding-top: 5px;
     }
 }
 @media screen and (max-width: 425px) { // 425px width
