@@ -33,7 +33,7 @@ body {
 
 header { // header content
     z-index: 499;
-    max-height: 64px;
+    max-height: 63.5px;
 
     // Desktop Navbar >>>
     nav {
@@ -316,10 +316,11 @@ main { // main content
         width: 100px;
     }
     main .section-hero div {
-        height: 85vh;
+        height: 75vh;
     }
     main section {
-        padding-top: 5px;
+        padding-top: 0px;
+        height: 80vh;
     }
 }
 @media screen and (max-width: 425px) { // 425px width
