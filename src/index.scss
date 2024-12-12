@@ -74,11 +74,7 @@ header { // header content
             transition: all 0.3s;
         
             &:hover { // menu items on hover
-                // color: $color-secondary;
-                border-radius: 10px;
-                background-color: $color-secondary;
-                padding-left: 25px;
-                padding-right: 10px;
+                color: $color-secondary;
                 font-size: $font-size-large;
             }
         }
@@ -108,6 +104,7 @@ header { // header content
             color: $color-text;
             font-size: $font-size-medium;
             margin-bottom: 15px;
+            padding: 5px;
             width: 240px;
 
             transition: all 0.3s;
@@ -115,7 +112,7 @@ header { // header content
             &:hover { // hover for dropdown
                 color: $color-primary;
                 background-color: $color-text;
-                padding: 5px;
+                padding: 10px 5px;
                 border-radius: 10px;
                 font-size: $font-size-large;
             }
