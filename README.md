@@ -119,3 +119,6 @@ Got assets working and configured _webpack.config.js_ file to include assets fol
 <img src="https://github.com/user-attachments/assets/a092fd68-79d7-4695-8cb3-6e411d2ebc6e" width="250">
 <img src="https://github.com/user-attachments/assets/f3533281-c6af-4a5e-a9fb-4c5ef902c243" width="250">
 
+### **Added mobile menu hamburger icon to mobile version**
+![Screenshot 2024-12-12 164443](https://github.com/user-attachments/assets/72e0d9d1-a186-46e2-84dd-e90f8e27d4d1)
+
