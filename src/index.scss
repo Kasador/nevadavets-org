@@ -29,7 +29,7 @@ body {
 // Mobile Menu Main Styles & Handling Event Listeners 
 .mobileMenuFadeIn {
     border-radius: 100%;
-    margin: 23px;
+    margin: 28px;
     background-color: $color-bg;
     animation: fadeInColor .5s;
 }
@@ -41,12 +41,13 @@ body {
 }
 @keyframes fadeInColor {
     0% { border-radius: 0%; margin: 0px; background-color: $color-primary; }
-    100% { border-radius: 100%; margin: 23px; background-color: $color-bg; }
+    100% { border-radius: 100%; margin: 28px; background-color: $color-bg; }
 }
 @keyframes fadeOutColor {
-    0% { border-radius: 100%; margin: 23px; background-color: $color-primary; }
-    70% { margin: 23px; }
-    85% { margin: 10px; }
+    0% { border-radius: 100%; margin: 28px; background-color: $color-primary; }
+    70% { margin: 28px; }
+    85% { margin: 20px; }
+    95% { margin: 15px; }
     99% { border-radius: 100%;}
     100% { border-radius: 0%; margin: 0px; background-color: $color-bg; }
 }
