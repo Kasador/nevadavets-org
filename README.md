@@ -123,3 +123,8 @@ Got assets working and configured _webpack.config.js_ file to include assets fol
 ### **Added mobile menu hamburger icon to mobile version**
 ![Screenshot 2024-12-12 164443](https://github.com/user-attachments/assets/72e0d9d1-a186-46e2-84dd-e90f8e27d4d1)
 
+### Mobile menu full screen on open, font-size increased // still in progress
+<img src="https://github.com/user-attachments/assets/a842854f-f6b5-45c3-8ade-757708baf5f9" width="300">
+<img src="https://github.com/user-attachments/assets/582cdf23-e211-485b-8092-334b873ab1cf" width="300">
+
+
