@@ -65,20 +65,25 @@ body {
     z-index: 1002; /* Make sure the icon is always visible */
     opacity: 1; /* Always fully visible */
 }
-#mobile-menu {
+#mobile-menu { // mobile nav menu
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 100vw;
     height: 100%;
     background-color: $color-primary; // Red background
     transform: translateX(-100%); // Off-screen by default
     visibility: visible; // Always visible for GSAP to animate
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     z-index: 9999; // Ensure it appears below the toggle button
+    
+    li {
+        font-size: $font-size-supreme;
+    }
 }
 
 .mobile-toggle-icon {
@@ -103,18 +108,6 @@ body {
     -ms-user-select: none;
     user-select: none;
   }
-// .ham {
-//     position: relative;
-//     z-index: 1000; // On top of everything
-//     cursor: pointer;
-// }
-
-// .line {
-//     stroke: $color-text; // Visible lines
-//     stroke-width: 5.5;
-//     stroke-linecap: round;
-//     fill: none;
-// }
   .hamRotate.active {
     transform: rotate(45deg);
   }
