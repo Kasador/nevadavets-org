@@ -77,6 +77,7 @@ Simple, yet **powerful setup** that is just not overcomplicating things where t
 - npm i sass-loader
 - npm i copy-webpack-plugin
 - npm i boxicons
+- npm i gsap
 
 1.  **Clone the Repository**
 
