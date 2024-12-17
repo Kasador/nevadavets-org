@@ -127,4 +127,8 @@ Got assets working and configured _webpack.config.js_ file to include assets fol
 <img src="https://github.com/user-attachments/assets/a842854f-f6b5-45c3-8ade-757708baf5f9" width="300">
 <img src="https://github.com/user-attachments/assets/582cdf23-e211-485b-8092-334b873ab1cf" width="300">
 
+### Mobile Navbar & Donate Btn Styles Updated/Fixed
+<img src="https://github.com/user-attachments/assets/ae78c21c-cdad-4419-9e59-4d134a53a5a6" width="300">
+<img src="https://github.com/user-attachments/assets/ac0c7d73-a592-434c-9a24-b169a37371e1" width="300">
+
 
