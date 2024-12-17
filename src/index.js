@@ -20,6 +20,8 @@ mobileMenuToggle.addEventListener('click', () => { // Toggle mobile menu
             duration: 0.5,
             ease: 'power1.out',
         });
+        document.body.style.overflow = 'hidden';
+        mobileMenuToggle.style.borderBottomRightRadius = "100%"; 
         mobileMenuToggle.classList.remove('mobileMenuFadeOut');
     } else { // Slide the menu out
         gsap.to(mobileMenu, {
@@ -27,7 +29,9 @@ mobileMenuToggle.addEventListener('click', () => { // Toggle mobile menu
             duration: 0.5,
             ease: 'power1.in',
         });
+        mobileMenuToggle.style.borderBottomRightRadius = "15px"; 
         mobileMenuToggle.classList.add('mobileMenuFadeOut');
+        document.body.style.overflow = 'visible';
     }
 
     isOpen = !isOpen; // Toggle the state

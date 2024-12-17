@@ -22,7 +22,6 @@ $font-size-supreme: 3rem;
 html {
     width: 100%;
 }
-
 body {
     background-color: $color-bg;
 }
@@ -34,7 +33,7 @@ body {
     animation: fadeInColor .5s;
 }
 .mobileMenuFadeOut {
-    border-bottom-right-radius: 15px;
+    border-radius: 50%;
     margin: 0px;
     background-color: $color-bg;
     animation: fadeOutColor .5s;
@@ -58,14 +57,12 @@ body {
     position: relative; /* Ensures it's correctly positioned */
     z-index: 1001; /* Higher than the mobile menu */
     cursor: pointer;
+    background-color: $color-bg;
 }
-
 .ham {
     position: relative; /* Ensure it's not affected by the menu */
     z-index: 1002; /* Make sure the icon is always visible */
     opacity: 1; /* Always fully visible */
-    background-color: $color-bg;
-    border-bottom-right-radius: 15px;
 }
 #mobile-menu { // mobile nav menu
     position: fixed;
@@ -85,13 +82,8 @@ body {
     
     li {
         font-size: $font-size-supreme;
-
-        &:hover {
-            font-size: $font-size-supreme;
-        }
     }
 }
-
 .mobile-toggle-icon {
     display: flex;
     align-items: center;
@@ -151,12 +143,9 @@ body {
     stroke-dashoffset: -64px;
 }
   
-
 .btn-donate {
     z-index: 999;
 }
-
-// HEADER NAV DESKTOP
 header { // header content
     z-index: 499;
     max-height: 63.5px;
@@ -277,92 +266,7 @@ header { // header content
     }
 }
 
-main { // main content
-    z-index: 0;
-    width: 100%;
-
-    section {
-        background: $color-bg;
-        height: 90vh;
-        padding-top: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 0;
-    }
-
-    .section-hero { // the hero image section
-        display: flex;
-        justify-content: center;
-
-        div { // the hero image
-            background-image: url("./assets/images/navadavetsorg-hero-bg.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
-            width: 85vw;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-            transition: all 0.3s;
-        }
-    }
-
-    .hero-content-wrapper { // content for hero image
-        background-image: none !important;
-        position: relative;
-        bottom: 100px;
-        z-index: 0;
-        color: $color-bg;
-
-        img {
-            width: 150px;
-            margin: 25px;
-
-            transition: all 0.3s;
-        }
-
-        h1 {
-            font-size: $font-size-supreme;
-            font-weight: bold;
-
-            transition: all 0.3s;
-        }
-
-        p {
-            margin: 10px;
-            font-size: $font-size-extra-large;
-
-            transition: all 0.3s;
-        }
-
-        button { // call-to-action btn hero image content
-            margin: 20px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: $font-size-medium;
-            background-color: $color-secondary;
-            color: $color-bg;
-            z-index: 2;
-            border: none;
-            cursor: pointer;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-            transition: all 0.3s;
-
-            &:hover {
-                border-bottom-right-radius: 50px;
-                box-shadow: rgba(197, 74, 69, 0.4) 5px 5px, rgba(197, 74, 69, 0.3) 10px 10px, rgba(197, 74, 69, 0.2) 15px 15px, rgba(197, 74, 69, 0.1) 20px 20px, rgba(197, 74, 69, 0.05) 25px 25px;
-            }
-        }
-    }
-}
-
+// Main Website Wrapper/Container
 #website-content-container {
     margin: 0 auto;
     height: 100%;
@@ -380,19 +284,6 @@ main { // main content
 }
 
 // Media Queries >>>
-@media screen and (max-width: 1200px) { // 1200px width {
-    main .section-hero div {
-        width: 90vw;
-    }
-}
-@media screen and (max-width: 1000px) { // 1000px width
-    main .hero-content-wrapper img {
-        width: 125px;
-    }
-    main .hero-content-wrapper h1 {
-        font-size: $font-size-extra-extra-large;
-    }
-}
 @media screen and (max-width: 900px) { // 900px width
     header nav li {
         font-size: $font-size-small;
@@ -409,15 +300,6 @@ main { // main content
             font-size: $font-size-medium;
         }
     }
-    main .hero-content-wrapper img {
-        width: 115px;
-    }
-    main .hero-content-wrapper p {
-        font-size: $font-size-large;
-    }
-    main .hero-content-wrapper button {
-        font-size: $font-size-extra-small;
-    }
 }
 @media screen and (max-width: 840px) { // For smaller screens
     #desktop {
@@ -430,14 +312,6 @@ main { // main content
         transform: translateX(-100%); // Off-screen by default
         visibility: visible; // Visible for GSAP to manipulate
         z-index: 9998; // Ensure menu appears on top
-
-        li a {
-            font-size: $font-size-supreme;
-    
-            &:hover {
-                font-size: $font-size-supreme;
-            }
-        }
     }
     .mobile-toggle-icon {
         z-index: 9999; // Ensure menu appears on top
@@ -449,50 +323,5 @@ main { // main content
     }
     #desktop {
         display: flex; // Show desktop menu
-    }
-}
-@media screen and (max-width: 700px) { // 700px width
-    main .hero-content-wrapper h1 {
-        font-size: $font-size-extra2-smaller-large;
-    }
-    main .hero-content-wrapper img {
-        width: 100px;
-    }
-    main .hero-content-wrapper p {
-        font-size: $font-size-medium;
-    }
-}
-@media screen and (max-height: 600px) { // 600px height
-    main .hero-content-wrapper {
-        bottom: 50px;
-    }
-    main .section-hero div {
-        height: 85vh;
-    }
-    main section {
-        padding-top: 5px;
-    }
-}
-@media screen and (max-width: 500px) { // 500px width
-    main .hero-content-wrapper h1 {
-        font-size: 1.7rem;
-    }
-    main .hero-content-wrapper img {
-        width: 100px;
-    }
-    main .section-hero div {
-        height: 75vh;
-    }
-    main section {
-        padding-top: 0px;
-        height: 80vh;
-    }
-}
-@media screen and (max-width: 425px) { // 425px width
-    main .hero-content-wrapper h1 {
-        font-size: 1.5rem;
-    }
-    main .hero-content-wrapper img {
-        width: 100px;
     }
 }
