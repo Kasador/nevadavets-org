@@ -371,7 +371,7 @@ main { // main content
     }
 }
 
-.remove-default-links-apple a{color:#fff; text-decoration:none;}
+.remove-default-links-apple a{color:$color-bg; text-decoration:none;}
 
 footer {
     background-color: $color-primary;
