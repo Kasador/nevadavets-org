@@ -131,4 +131,9 @@ Got assets working and configured _webpack.config.js_ file to include assets fol
 <img src="https://github.com/user-attachments/assets/ae78c21c-cdad-4419-9e59-4d134a53a5a6" width="300">
 <img src="https://github.com/user-attachments/assets/ac0c7d73-a592-434c-9a24-b169a37371e1" width="300">
 
+### Feat: Footer styles done, content needed, UI/UX completed Desktop/Mobile
+<img src="https://github.com/user-attachments/assets/38cbddf8-2999-4e82-82c2-26f53ce274aa" width="600px">
+<img src="https://github.com/user-attachments/assets/0c767381-38a7-453e-9fbc-6a8d44264817" width="300px">
+
+
 

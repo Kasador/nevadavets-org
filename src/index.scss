@@ -366,7 +366,7 @@ main { // main content
 #website-content-container {
     margin: 0 auto;
     height: 100%;
-    padding: 40px;
+    padding: 50px;
 
     article {
         display: flex;
@@ -379,6 +379,66 @@ main { // main content
     }
 }
 
+footer {
+    background-color: $color-primary;
+    color: $color-bg;
+    display: flex;
+    justify-content: center;
+
+    hr {
+        border-color: $color-text;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 100%;
+    }
+    
+
+    .footer-logo {
+        position: absolute;
+        left: 0;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    #footer-wrapper {
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: row;
+        padding: 100px 20px;
+    }
+    .footer-info-wrapper {
+        padding: 20px;
+
+        .footer-header {
+            font-size: $font-size-extra-large;
+            color: $color-bg;
+        }
+        .footer-info {
+
+            p {
+                display: flex;
+                padding: 5px;
+                justify-content: start;
+                flex-direction: row;
+                opacity: .9;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    #footer-copy-right {
+        position: absolute;
+        margin-top: 250px;
+        right: 40px;
+        opacity: 0.9;
+        color: $color-surface;
+    }
+}
 // Media Queries >>>
 @media screen and (max-width: 1200px) { // 1200px width {
     main .section-hero div {
@@ -438,9 +498,46 @@ main { // main content
                 font-size: $font-size-supreme;
             }
         }
+
     }
     .mobile-toggle-icon {
         z-index: 9999; // Ensure menu appears on top
+    }
+    // FOOTER mobile
+    footer #footer-wrapper {
+        padding: 100px 0px;
+        flex-direction: column;
+        width: 400px;
+
+        #footer-copy-right {
+            margin-top: 550px;
+            right: 0px;
+            padding: 14px;
+            text-align: center;
+        } 
+    }
+
+    .footer-info-wrapper {
+        padding: 0px;
+
+        .footer-header {
+            font-size: $font-size-extra-large;
+            color: $color-bg;
+        }
+        .footer-info {
+
+            p {
+                display: flex;
+                padding: 5px;
+                justify-content: start;
+                flex-direction: row;
+                opacity: .9;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 841px) { // For larger screens
