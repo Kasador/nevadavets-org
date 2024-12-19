@@ -22,6 +22,7 @@ $font-size-supreme: 3rem;
 html {
     width: 100%;
 }
+
 body {
     background-color: $color-bg;
 }
@@ -33,7 +34,7 @@ body {
     animation: fadeInColor .5s;
 }
 .mobileMenuFadeOut {
-    border-radius: 50%;
+    border-bottom-right-radius: 15px;
     margin: 0px;
     background-color: $color-bg;
     animation: fadeOutColor .5s;
@@ -57,12 +58,14 @@ body {
     position: relative; /* Ensures it's correctly positioned */
     z-index: 1001; /* Higher than the mobile menu */
     cursor: pointer;
-    background-color: $color-bg;
 }
+
 .ham {
     position: relative; /* Ensure it's not affected by the menu */
     z-index: 1002; /* Make sure the icon is always visible */
     opacity: 1; /* Always fully visible */
+    background-color: $color-bg;
+    border-bottom-right-radius: 15px;
 }
 #mobile-menu { // mobile nav menu
     position: fixed;
@@ -82,8 +85,13 @@ body {
     
     li {
         font-size: $font-size-supreme;
+
+        &:hover {
+            font-size: $font-size-supreme;
+        }
     }
 }
+
 .mobile-toggle-icon {
     display: flex;
     align-items: center;
@@ -143,9 +151,12 @@ body {
     stroke-dashoffset: -64px;
 }
   
+
 .btn-donate {
     z-index: 999;
 }
+
+// HEADER NAV DESKTOP
 header { // header content
     z-index: 499;
     max-height: 63.5px;
@@ -270,7 +281,7 @@ header { // header content
 #website-content-container {
     margin: 0 auto;
     height: 100%;
-    padding: 40px;
+    padding: 50px;
 
     article {
         display: flex;
@@ -312,6 +323,14 @@ header { // header content
         transform: translateX(-100%); // Off-screen by default
         visibility: visible; // Visible for GSAP to manipulate
         z-index: 9998; // Ensure menu appears on top
+
+        li a {
+            font-size: $font-size-supreme;
+    
+            &:hover {
+                font-size: $font-size-supreme;
+            }
+        }
     }
     .mobile-toggle-icon {
         z-index: 9999; // Ensure menu appears on top
